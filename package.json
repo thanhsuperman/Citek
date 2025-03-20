@@ -1,0 +1,11 @@
+{
+  "name": "lib_citek1",
+  "version": "1.0.0",
+  "description": "thư viện của citek",
+  "filename": "citek.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
