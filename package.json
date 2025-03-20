@@ -1,11 +1,15 @@
 {
-  "name": "lib_citek1",
-  "version": "1.0.0",
-  "description": "thư viện của citek",
+  "name": "citek",
+  "description": "lib Citek ",
   "filename": "citek.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thanhsuperman/Citek.git"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "citek"
+  ],
+  "author": "Citek",
+  "license": "MIT"
 }

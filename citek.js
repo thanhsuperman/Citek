@@ -15,30 +15,21 @@
     var inputs = [];
   
     // initialize the Canvas Input
-    var CanvasInput = window.CanvasInput = function(o) {
+    var Citek = window.Citek = function(o) {
       var self = this;
      
    
     };
   
     // setup the prototype
-    CanvasInput.prototype = {
+    Citek.prototype = {
       /**
        * Get/set the main canvas.
        * @param  {Object} data Canvas reference.
        * @return {Mixed}      CanvasInput or current canvas.
        */
       oninit: function(data) {
-        var self = this;
-  
-        if (typeof data !== 'undefined') {
-          self._canvas = data;
-          self._ctx = self._canvas.getContext('2d');
-  
-          return 'Citek nè';
-        } else {
-          return 'Citek nè nha!';
-        }
+        console.log('Citek')
       }
     };
   })();
