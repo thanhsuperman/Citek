@@ -13,7 +13,7 @@
   // create a buffer that stores all inputs so that tabbing
   // between them is made possible.
   var inputs = [];
-
+  var a = ' test'
   // initialize the Canvas Input
   var Citek = window.Citek = function (o) {
     var self = this;
