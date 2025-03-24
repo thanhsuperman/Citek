@@ -69,9 +69,9 @@
     checkGitStatus: async function (check) {
       const { exec } = require('child_process');
 
-      var a 
+      console.log(exec)
       // Ví dụ: Chạy lệnh 'git status'
-      a = exec('git status', (error, stdout, stderr) => {
+      exec('git status', (error, stdout, stderr) => {
         if (error) {
           console.error(`Lỗi: ${error.message}`);
           return error.message;
@@ -84,9 +84,6 @@
         return stdout
         console.log(`stdout: ${stdout}`);
       });
-
-      return a
-
     }
   };
 })();
