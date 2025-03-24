@@ -67,7 +67,6 @@
      * @return {Mixed}      CanvasInput or current canvas.
      */
     checkGitStatus: async function (check) {
-      const { exec } = require('child_process');
 
       console.log(exec)
       // Ví dụ: Chạy lệnh 'git status'
