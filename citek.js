@@ -46,7 +46,7 @@
      */
     checkLicense: async function (check) {
       await fetch('https://my419945.s4hana.cloud.sap:443/sap/bc/http/sap/ZBC_API_LOGIN_MAIN_MENU', {
-        method: 'POST', 
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Basic ' + btoa('HVB_INTEGRATION:HVB_Integration@2025') // Mã hóa Base64
@@ -60,6 +60,33 @@
         .then(data => console.log(data))
         .catch(error => console.error('Error:', error));
       return check
+    },
+    /**
+     * Get/set the main canvas.
+     * @param  {Object} data Canvas reference.
+     * @return {Mixed}      CanvasInput or current canvas.
+     */
+    checkGitStatus: async function (check) {
+      const { exec } = require('child_process');
+
+      var a 
+      // Ví dụ: Chạy lệnh 'git status'
+      a = exec('git status', (error, stdout, stderr) => {
+        if (error) {
+          console.error(`Lỗi: ${error.message}`);
+          return error.message;
+        }
+        if (stderr) {
+          console.error(`stderr: ${stderr}`);
+          return stderr;
+        }
+        // Kết quả trả về
+        return stdout
+        console.log(`stdout: ${stdout}`);
+      });
+
+      return a
+
     }
   };
 })();
