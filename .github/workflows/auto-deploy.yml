@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest  # Chạy trên máy chủ Ubuntu
 
     steps:
-      - name: Pull latest code
-        run: 
-          git pull origin main 
       - name: install
         run:
            npm install
